@@ -1,0 +1,4 @@
+2021-04-15 07:50:02.9953 INFO Accessed Home Controller
+2021-04-15 07:50:16.1561 DEBUG Got a value
+2021-04-15 07:51:42.8673 ERROR Nothing to POST!
+2021-04-15 07:52:35.8172 WARN You tried to delete something!
