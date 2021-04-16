@@ -12,6 +12,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
 using BookStore_API.Data;
+using BookStore_API.Mappings;
 using BookStore_API.Services;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -46,7 +47,8 @@ namespace BookStore_API
                         .AllowAnyMethod()
                         .AllowAnyHeader());
             });
-            
+
+            services.AddAutoMapper(typeof(Maps));
             // Note: Initialize Swagger before controllers
             services.AddSwaggerGen(c =>
             {
